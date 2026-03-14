@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { resend, buildContactEmailHtml, buildAutoReplyHtml } from '@/lib/resend';
+import { getResendClient, buildContactEmailHtml, buildAutoReplyHtml } from '@/lib/resend';
 
 export async function POST(req: NextRequest) {
   try {
+    const resend = getResendClient();
     const body = await req.json();
     const { name, email, phone, company, machine, message } = body;
 
