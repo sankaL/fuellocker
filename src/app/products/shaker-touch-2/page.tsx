@@ -2,22 +2,23 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../product.module.css";
+import { Dumbbell, Zap, CupSoda, Leaf, DollarSign, CreditCard, FlaskConical, Snowflake, Smartphone, Droplets, MousePointerClick, Store, GlassWater, IceCreamCone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Shaker Touch 2 — Next-Gen Protein Shake Vending Machine",
+  title: "Shaker Touch 2 - Next-Gen Protein Shake Vending Machine",
   description: "Shaker Touch 2: 250+ protein shake drinks, 16,000 RPM mixers, 32\" touchscreen. The ultimate protein vending machine for gyms and offices in Ontario.",
 };
 
 const features = [
-  { icon: "🏋️", title: "Designed for Gyms", desc: "Engineered for high-traffic fitness environments — durable, reliable, and loved by fitness enthusiasts." },
-  { icon: "⚡", title: "16,000 RPM Mixers", desc: "Two ultra-powerful mixers ensure the perfect airy shake consistency every single time." },
-  { icon: "🥤", title: "250+ Drink Options", desc: "Eight large-capacity containers for protein powder — 250+ drink combinations available." },
-  { icon: "🌿", title: "Eco-Friendly Production", desc: "Sustainable design built with environmentally conscious manufacturing processes." },
-  { icon: "💰", title: "High-Profit Margins", desc: "Premium protein products generate significant revenue at high-traffic gym and office locations." },
-  { icon: "🔌", title: "Subscription Payments", desc: "Accepts contactless payments, fitness memberships, and subscription-based plans anytime." },
-  { icon: "🧪", title: "Syrup-Based Flavors", desc: "Three additional drink flavors from syrups — BCAA, L-Carnitine, and Isotonic." },
-  { icon: "❄️", title: "Cooling to 1°C", desc: "Energy-efficient or compressor-based cooling keeps beverages refreshingly chilled." },
-  { icon: "📱", title: "Auto Setup Tutorial", desc: "Interactive setup and tutorial on first power-on. No tech support needed — even a child could do it." },
+  { icon: <Dumbbell size={32} className="text-yellow" />, title: "Designed for Gyms", desc: "Engineered for high-traffic fitness environments - durable, reliable, and loved by fitness enthusiasts." },
+  { icon: <Zap size={32} className="text-yellow" />, title: "16,000 RPM Mixers", desc: "Two ultra-powerful mixers ensure the perfect airy shake consistency every single time." },
+  { icon: <CupSoda size={32} className="text-yellow" />, title: "250+ Drink Options", desc: "Eight large-capacity containers for protein powder - 250+ drink combinations available." },
+  { icon: <Leaf size={32} className="text-yellow" />, title: "Eco-Friendly Production", desc: "Sustainable design built with environmentally conscious manufacturing processes." },
+  { icon: <DollarSign size={32} className="text-yellow" />, title: "High-Profit Margins", desc: "Premium protein products generate significant revenue at high-traffic gym and office locations." },
+  { icon: <CreditCard size={32} className="text-yellow" />, title: "Subscription Payments", desc: "Accepts contactless payments, fitness memberships, and subscription-based plans anytime." },
+  { icon: <FlaskConical size={32} className="text-yellow" />, title: "Syrup-Based Flavors", desc: "Three additional drink flavors from syrups - BCAA, L-Carnitine, and Isotonic." },
+  { icon: <Snowflake size={32} className="text-yellow" />, title: "Cooling to 1°C", desc: "Energy-efficient or compressor-based cooling keeps beverages refreshingly chilled." },
+  { icon: <Smartphone size={32} className="text-yellow" />, title: "Auto Setup Tutorial", desc: "Interactive setup and tutorial on first power-on. No tech support needed - even a child could do it." },
 ];
 
 const specs = [
@@ -50,10 +51,10 @@ const supplements = [
 ];
 
 const related = [
-  { href: "/products/shaker-prime", icon: "🏪", name: "Shaker Prime", tagline: "Snacks & Beverages" },
-  { href: "/products/shaker-s", icon: "💪", name: "Shaker S", tagline: "Compact Protein" },
-  { href: "/products/milkshaker", icon: "🥛", name: "MilkShaker", tagline: "Fresh Milkshakes" },
-  { href: "/products/milkshaker-s", icon: "🍦", name: "MilkShaker S", tagline: "Compact Milkshake" },
+  { href: "/products/shaker-prime", icon: <Store size={24} className="text-yellow" />, name: "Shaker Prime", tagline: "Snacks & Beverages" },
+  { href: "/products/shaker-s", icon: <Dumbbell size={24} className="text-yellow" />, name: "Shaker S", tagline: "Compact Protein" },
+  { href: "/products/milkshaker", icon: <GlassWater size={24} className="text-yellow" />, name: "MilkShaker", tagline: "Fresh Milkshakes" },
+  { href: "/products/milkshaker-s", icon: <IceCreamCone size={24} className="text-yellow" />, name: "MilkShaker S", tagline: "Compact Milkshake" },
 ];
 
 export default function ShakerTouch2Page() {
@@ -143,10 +144,10 @@ export default function ShakerTouch2Page() {
                 Vending machine designed for gyms, offices, and vending businesses. It efficiently prepares protein, BCAA, and gainer shakes, ensuring the perfect texture with high-speed 16,000 RPM mixers.
               </p>
               <p style={{ marginTop: "16px" }}>
-                The large 32&quot; touchscreen attracts attention and encourages purchases. Advanced design, flexible setup, and high product quality — everything to boost engagement and increase daily usage.
+                The large 32&quot; touchscreen attracts attention and encourages purchases. Advanced design, flexible setup, and high product quality - everything to boost engagement and increase daily usage.
               </p>
               <p style={{ marginTop: "16px" }}>
-                When the machine is powered on for the first time, an interactive setup and tutorial will begin automatically. No tech support needed — even a child could do it.
+                When the machine is powered on for the first time, an interactive setup and tutorial will begin automatically. No tech support needed - even a child could do it.
               </p>
             </div>
             <div className={styles.sectionImage}>
@@ -220,9 +221,9 @@ export default function ShakerTouch2Page() {
               <h3 style={{ marginTop: "8px" }}>Advanced Components</h3>
               <div style={{ marginTop: "24px", display: "flex", flexDirection: "column", gap: "20px" }}>
                 {[
-                  { icon: "🧪", t: "Ingredient Dispensers", d: "Precision valves, modular containers that can be serviced independently, and sealed connections prevent leaks and product loss." },
-                  { icon: "💧", t: "Water & Pump System", d: "Compatible with bottled or direct water connection. Pumps & filters maintain stable pressure and clean liquid flow." },
-                  { icon: "🖱️", t: "Smart Design", d: "Auto cup dispenser for hands-free, clean serving. Touchscreen for quick drink selection. Fast, secure cashless checkout." },
+                  { icon: <FlaskConical size={24} className="text-yellow" />, t: "Ingredient Dispensers", d: "Precision valves, modular containers that can be serviced independently, and sealed connections prevent leaks and product loss." },
+                  { icon: <Droplets size={24} className="text-yellow" />, t: "Water & Pump System", d: "Compatible with bottled or direct water connection. Pumps & filters maintain stable pressure and clean liquid flow." },
+                  { icon: <MousePointerClick size={24} className="text-yellow" />, t: "Smart Design", d: "Auto cup dispenser for hands-free, clean serving. Touchscreen for quick drink selection. Fast, secure cashless checkout." },
                 ].map((item) => (
                   <div key={item.t} style={{ display: "flex", gap: "16px", alignItems: "flex-start" }}>
                     <div style={{ fontSize: "1.4rem", flexShrink: 0 }}>{item.icon}</div>

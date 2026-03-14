@@ -2,22 +2,23 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../product.module.css";
+import { Dumbbell, Zap, CupSoda, Package, CreditCard, FlaskConical, Snowflake, Lightbulb, Lock, Store, GlassWater, IceCreamCone, Droplets } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Shaker S — Compact Protein Shake Vending Machine",
+  title: "Shaker S - Compact Protein Shake Vending Machine",
   description: "Shaker S: A compact countertop protein shake vending machine. 130+ drinks, 4 protein flavors, 16,000 RPM mixers. Perfect for gyms and offices in Ontario.",
 };
 
 const features = [
-  { icon: "💪", title: "Designed for Gyms", desc: "Built for fitness environments — compact, reliable, loved by gym members and office workers alike." },
-  { icon: "⚡", title: "16,000 RPM Mixers", desc: "Two ultra-powerful mixers ensure the perfect airy shake consistency every single time." },
-  { icon: "🥤", title: "130+ Drink Options", desc: "Four large-capacity containers for protein powder — 130+ drink combinations available." },
-  { icon: "📦", title: "Countertop Design", desc: "Weighing just 80 lbs, Shaker S fits in gyms, offices, and co-working spaces anywhere." },
-  { icon: "🔌", title: "Flexible Payments", desc: "Accepts contactless payments, fitness memberships, and subscription-based plans anytime." },
-  { icon: "🧪", title: "Syrup-Based Flavors", desc: "Three additional drink flavors from syrups — BCAA, L-Carnitine, and Isotonic." },
-  { icon: "❄️", title: "Cooling to 1°C", desc: "Energy-efficient or compressor-based cooling keeps beverages refreshingly chilled." },
-  { icon: "💡", title: "LED Lighting", desc: "Modern look and easy navigation — attracts attention and encourages purchases." },
-  { icon: "🔑", title: "Electronic Lock", desc: "Keyless entry for operators — create or remove access digitally. No keys to lose." },
+  { icon: <Dumbbell size={32} className="text-yellow" />, title: "Designed for Gyms", desc: "Built for fitness environments - compact, reliable, loved by gym members and office workers alike." },
+  { icon: <Zap size={32} className="text-yellow" />, title: "16,000 RPM Mixers", desc: "Two ultra-powerful mixers ensure the perfect airy shake consistency every single time." },
+  { icon: <CupSoda size={32} className="text-yellow" />, title: "130+ Drink Options", desc: "Four large-capacity containers for protein powder - 130+ drink combinations available." },
+  { icon: <Package size={32} className="text-yellow" />, title: "Countertop Design", desc: "Weighing just 80 lbs, Shaker S fits in gyms, offices, and co-working spaces anywhere." },
+  { icon: <CreditCard size={32} className="text-yellow" />, title: "Flexible Payments", desc: "Accepts contactless payments, fitness memberships, and subscription-based plans anytime." },
+  { icon: <FlaskConical size={32} className="text-yellow" />, title: "Syrup-Based Flavors", desc: "Three additional drink flavors from syrups - BCAA, L-Carnitine, and Isotonic." },
+  { icon: <Snowflake size={32} className="text-yellow" />, title: "Cooling to 1°C", desc: "Energy-efficient or compressor-based cooling keeps beverages refreshingly chilled." },
+  { icon: <Lightbulb size={32} className="text-yellow" />, title: "LED Lighting", desc: "Modern look and easy navigation - attracts attention and encourages purchases." },
+  { icon: <Lock size={32} className="text-yellow" />, title: "Electronic Lock", desc: "Keyless entry for operators - create or remove access digitally. No keys to lose." },
 ];
 
 const specs = [
@@ -51,10 +52,10 @@ const supplements = [
 ];
 
 const related = [
-  { href: "/products/shaker-prime", icon: "🏪", name: "Shaker Prime", tagline: "Snacks & Beverages" },
-  { href: "/products/shaker-touch-2", icon: "🥤", name: "Shaker Touch 2", tagline: "Full-Size Protein" },
-  { href: "/products/milkshaker", icon: "🥛", name: "MilkShaker", tagline: "Fresh Milkshakes" },
-  { href: "/products/milkshaker-s", icon: "🍦", name: "MilkShaker S", tagline: "Compact Milkshake" },
+  { href: "/products/shaker-prime", icon: <Store size={24} className="text-yellow" />, name: "Shaker Prime", tagline: "Snacks & Beverages" },
+  { href: "/products/shaker-touch-2", icon: <CupSoda size={24} className="text-yellow" />, name: "Shaker Touch 2", tagline: "Full-Size Protein" },
+  { href: "/products/milkshaker", icon: <GlassWater size={24} className="text-yellow" />, name: "MilkShaker", tagline: "Fresh Milkshakes" },
+  { href: "/products/milkshaker-s", icon: <IceCreamCone size={24} className="text-yellow" />, name: "MilkShaker S", tagline: "Compact Milkshake" },
 ];
 
 export default function ShakerSPage() {
@@ -76,7 +77,7 @@ export default function ShakerSPage() {
                 <span className="text-yellow">Small Size, Big Performance</span>
               </h1>
               <p className={styles.heroSubtitle}>
-                Boost revenue, delight your clients, and keep them coming back. A compact countertop protein shake machine — 130+ drinks, fits anywhere. Just 80 lbs.
+                Boost revenue, delight your clients, and keep them coming back. A compact countertop protein shake machine - 130+ drinks, fits anywhere. Just 80 lbs.
               </p>
               <div className={styles.heroActions}>
                 <Link href="/contact?machine=Shaker+S" className="btn btn-primary btn-lg" id="shaker-s-cta">
@@ -144,10 +145,10 @@ export default function ShakerSPage() {
                 Shaker S is a countertop vending machine designed for gyms, offices, and vending businesses. It efficiently prepares protein, BCAA, and gainer shakes with high-speed 16,000 RPM mixers for a perfect texture.
               </p>
               <p style={{ marginTop: "16px" }}>
-                Weighing just 80 lbs, Shaker S fits in gyms, offices, and co-working spaces — offering maximum flexibility and minimal space requirements. Place it on a counter and start earning.
+                Weighing just 80 lbs, Shaker S fits in gyms, offices, and co-working spaces - offering maximum flexibility and minimal space requirements. Place it on a counter and start earning.
               </p>
               <p style={{ marginTop: "16px" }}>
-                Advanced design, flexible setup, and high product quality — everything to boost engagement and increase daily usage.
+                Advanced design, flexible setup, and high product quality - everything to boost engagement and increase daily usage.
               </p>
             </div>
             <div className={styles.sectionImage}>
@@ -219,9 +220,9 @@ export default function ShakerSPage() {
               <h3 style={{ marginTop: "8px" }}>Built for Operators</h3>
               <div style={{ marginTop: "24px", display: "flex", flexDirection: "column", gap: "20px" }}>
                 {[
-                  { icon: "📦", t: "Modular Containers", d: "Four large-capacity containers for protein powder. Each module can be serviced independently — minimal downtime." },
-                  { icon: "💧", t: "Flexible Water Supply", d: "Compatible with bottled or direct water connection. Easy service access for quick maintenance of tanks." },
-                  { icon: "💳", t: "Full Business Support", d: "Assistance with business registration, ready-to-use contract templates, and location selection guidance." },
+                  { icon: <Package size={24} className="text-yellow" />, t: "Modular Containers", d: "Four large-capacity containers for protein powder. Each module can be serviced independently - minimal downtime." },
+                  { icon: <Droplets size={24} className="text-yellow" />, t: "Flexible Water Supply", d: "Compatible with bottled or direct water connection. Easy service access for quick maintenance of tanks." },
+                  { icon: <CreditCard size={24} className="text-yellow" />, t: "Full Business Support", d: "Assistance with business registration, ready-to-use contract templates, and location selection guidance." },
                 ].map((item) => (
                   <div key={item.t} style={{ display: "flex", gap: "16px", alignItems: "flex-start" }}>
                     <div style={{ fontSize: "1.4rem", flexShrink: 0 }}>{item.icon}</div>
@@ -242,7 +243,7 @@ export default function ShakerSPage() {
           <div className={styles.ctaStripInner}>
             <div>
               <h2>Ready to Add Shaker S to Your Location?</h2>
-              <p style={{ color: "var(--color-text-muted)", marginTop: "8px" }}>Perfect for countertops across Ontario — gyms, offices, studios, and more.</p>
+              <p style={{ color: "var(--color-text-muted)", marginTop: "8px" }}>Perfect for countertops across Ontario - gyms, offices, studios, and more.</p>
             </div>
             <div className={styles.ctaStripActions}>
               <Link href="/contact?machine=Shaker+S" className="btn btn-primary btn-lg" id="shaker-s-bottom-cta">

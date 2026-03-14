@@ -31,17 +31,17 @@ export async function POST(req: NextRequest) {
 
     if (dbError) {
       console.error('Supabase error:', dbError);
-      // Don't fail the whole request if DB insert fails — still try to send emails
+      // Don't fail the whole request if DB insert fails - still try to send emails
     }
 
-    const fromEmail = process.env.CONTACT_EMAIL_FROM || 'FuelLocker <noreply@fuellocker.ca>';
-    const toEmail = process.env.CONTACT_EMAIL_TO || 'info@fuellocker.ca';
+    const fromEmail = process.env.CONTACT_EMAIL_FROM || 'Fuel Locker <noreply@fuellocker.ca>';
+    const toEmail = process.env.CONTACT_EMAIL_TO || 'fuellockervending@gmail.com';
 
     // 2. Send notification to business
     await resend.emails.send({
       from: fromEmail,
       to: [toEmail],
-      subject: `New Enquiry from ${name}${machine ? ` — ${machine}` : ''} | FuelLocker`,
+      subject: `New Enquiry from ${name}${machine ? ` - ${machine}` : ''} | Fuel Locker`,
       html: buildContactEmailHtml({ name, email, phone, company, machine, message }),
     });
 
@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: fromEmail,
       to: [email],
-      subject: "We've received your message — FuelLocker",
+      subject: "We've received your message - Fuel Locker",
       html: buildAutoReplyHtml(name),
     });
 

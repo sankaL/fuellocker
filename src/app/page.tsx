@@ -2,16 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
+import {
+  Store, CupSoda, Dumbbell, GlassWater, IceCreamCone, 
+  DollarSign, Smartphone, Lock, CreditCard, Thermometer, Target, 
+  Zap, ArrowRight, Package, Monitor, MapPin
+} from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "FuelLocker | Smart Vending Machines for Ontario Businesses",
+  title: "Fuel Locker | Smart Vending Machines for Ontario Businesses",
   description: "Ontario's premier smart vending machine provider. Protein shakes, milkshakes, and snack vending machines for gyms, offices, and high-traffic locations.",
 };
 
 const products = [
   {
     href: "/products/shaker-prime",
-    icon: "🏪",
+    icon: <Store className="icon-xl text-yellow" />,
     name: "Shaker Prime",
     tagline: "Snacks. Sales. Success.",
     desc: "Floor-standing smart vending for snacks & beverages with age verification, temperature control & remote management.",
@@ -21,7 +26,7 @@ const products = [
   },
   {
     href: "/products/shaker-touch-2",
-    icon: "🥤",
+    icon: <CupSoda className="icon-xl text-yellow" />,
     name: "Shaker Touch 2",
     tagline: "Next-Gen Protein Machine",
     desc: "250+ drinks with 8 protein flavors. 16,000 RPM mixers for perfect shake consistency every time.",
@@ -31,30 +36,30 @@ const products = [
   },
   {
     href: "/products/shaker-s",
-    icon: "💪",
+    icon: <Dumbbell className="icon-xl text-yellow" />,
     name: "Shaker S",
     tagline: "Small Size, Big Performance",
-    desc: "Compact countertop protein vending machine — 130+ drinks, 4 protein flavors. Fits anywhere.",
+    desc: "Compact countertop protein vending machine - 130+ drinks, 4 protein flavors. Fits anywhere.",
     capacity: "130+ drinks",
     display: '15" Display',
     badge: "Compact",
   },
   {
     href: "/products/milkshaker",
-    icon: "🥛",
+    icon: <GlassWater className="icon-xl text-yellow" />,
     name: "MilkShaker",
     tagline: "Fresh Milkshakes on Demand",
-    desc: "Premium milkshake machine with 250+ options. Strawberry, Chocolate, Mango, and more — fresh every time.",
+    desc: "Premium milkshake machine with 250+ options. Strawberry, Chocolate, Mango, and more - fresh every time.",
     capacity: "250+ drinks",
     display: '32" Touchscreen',
     badge: "Milkshakes",
   },
   {
     href: "/products/milkshaker-s",
-    icon: "🍦",
+    icon: <IceCreamCone className="icon-xl text-yellow" />,
     name: "MilkShaker S",
     tagline: "Compact Milkshake Power",
-    desc: "The compact version of our milkshake machine — 130+ options. Easy to relocate to find the best spot.",
+    desc: "The compact version of our milkshake machine - 130+ options. Easy to relocate to find the best spot.",
     capacity: "130+ drinks",
     display: '15" Display',
     badge: "Compact",
@@ -63,34 +68,34 @@ const products = [
 
 const benefits = [
   {
-    icon: "💰",
+    icon: <DollarSign className="icon-lg text-yellow" />,
     title: "Passive Revenue Stream",
     desc: "Earn income 24/7 with minimal time investment. Our machines start generating revenue from day one.",
   },
   {
-    icon: "📱",
+    icon: <Smartphone className="icon-lg text-yellow" />,
     title: "Remote Management",
     desc: "Monitor sales, inventory, and performance from your phone. Full control, anywhere in Ontario.",
   },
   {
-    icon: "🔒",
+    icon: <Lock className="icon-lg text-yellow" />,
     title: "Keyless Entry",
-    desc: "Electronic lock — create or remove access via your personal account. No keys to lose.",
+    desc: "Electronic lock - create or remove access via your personal account. No keys to lose.",
   },
   {
-    icon: "💳",
+    icon: <CreditCard className="icon-lg text-yellow" />,
     title: "Contactless Payments",
     desc: "Tap-to-pay, subscriptions, QR codes, and loyalty programs supported out of the box.",
   },
   {
-    icon: "🌡️",
+    icon: <Thermometer className="icon-lg text-yellow" />,
     title: "Temperature Control",
     desc: "Keep products fresh and chilled. Smart cooling systems maintain optimal conditions automatically.",
   },
   {
-    icon: "🎯",
+    icon: <Target className="icon-lg text-yellow" />,
     title: "Full Business Support",
-    desc: "Business registration help, contract templates, location selection — we set you up for success.",
+    desc: "Business registration help, contract templates, location selection - we set you up for success.",
   },
 ];
 
@@ -112,7 +117,7 @@ export default function HomePage() {
         </div>
         <div className={`container ${styles.heroContent}`}>
           <div className={styles.heroText}>
-            <div className="badge">🇨🇦 Ontario, Canada</div>
+            <div className="badge" style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}><MapPin size={14} className="text-yellow" /> Ontario, Canada</div>
             <h1 className={styles.heroHeadline}>
               Smart Vending Machines<br />
               <span className="text-yellow">Built for Business</span>
@@ -141,18 +146,18 @@ export default function HomePage() {
             <div className={styles.heroImageWrapper}>
               <Image
                 src="/images/products/hero-machine.png"
-                alt="FuelLocker smart vending machine"
+                alt="Fuel Locker smart vending machine"
                 width={480}
                 height={580}
                 priority
                 className={styles.heroMachineImg}
               />
               <div className={styles.floatingBadge1}>
-                <span>⚡</span>
+                <Zap size={18} className="text-yellow" />
                 <span>Live Revenue</span>
               </div>
               <div className={styles.floatingBadge2}>
-                <span>💳</span>
+                <CreditCard size={18} className="text-yellow" />
                 <span>Tap to Pay</span>
               </div>
             </div>
@@ -166,14 +171,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why FuelLocker */}
+      {/* Why Fuel Locker */}
       <section className="section">
         <div className="container">
           <div className="text-center" style={{ marginBottom: "64px" }}>
-            <span className="section-label">Why FuelLocker</span>
+            <span className="section-label">Why Fuel Locker</span>
             <h2>More Than a Vending Machine</h2>
             <p style={{ maxWidth: "580px", margin: "16px auto 0" }}>
-              We provide the complete package — premium machines, business setup support, remote management tools, and ongoing tech support for Ontario businesses.
+              We provide the complete package - premium machines, business setup support, remote management tools, and ongoing tech support for Ontario businesses.
             </p>
           </div>
           <div className="grid-3">
@@ -195,7 +200,7 @@ export default function HomePage() {
             <span className="section-label">Our Machines</span>
             <h2>Five Machines, Endless Opportunity</h2>
             <p style={{ maxWidth: "560px", margin: "16px auto 0" }}>
-              From protein shake dispensers to milkshake machines — we have the right vending solution for your location.
+              From protein shake dispensers to milkshake machines - we have the right vending solution for your location.
             </p>
           </div>
           <div className={styles.productGrid}>
@@ -203,15 +208,17 @@ export default function HomePage() {
               <Link key={p.href} href={p.href} className={`card ${styles.productCard} ${i === 0 ? styles.productCardFeatured : ""}`} id={`product-card-${p.name.toLowerCase().replace(/\s+/g, "-")}`}>
                 <div className={styles.productCardBadge}>{p.badge}</div>
                 <div className={styles.productCardIcon}>{p.icon}</div>
-                <h3 className={styles.productCardName}>{p.name}</h3>
-                <p className={styles.productCardTagline}>{p.tagline}</p>
-                <p className={styles.productCardDesc}>{p.desc}</p>
-                <div className={styles.productCardSpecs}>
-                  <span className={styles.productCardSpec}>📦 {p.capacity}</span>
-                  <span className={styles.productCardSpec}>🖥️ {p.display}</span>
-                </div>
-                <div className={styles.productCardCta}>
-                  Learn More <span>→</span>
+                <div className={styles.productCardContent}>
+                  <h3 className={styles.productCardName}>{p.name}</h3>
+                  <p className={styles.productCardTagline}>{p.tagline}</p>
+                  <p className={styles.productCardDesc}>{p.desc}</p>
+                  <div className={styles.productCardSpecs}>
+                    <span className={styles.productCardSpec}><Package size={14} /> {p.capacity}</span>
+                    <span className={styles.productCardSpec}><Monitor size={14} /> {p.display}</span>
+                  </div>
+                  <div className={styles.productCardCta}>
+                    Learn More <ArrowRight size={16} />
+                  </div>
                 </div>
               </Link>
             ))}
@@ -254,7 +261,7 @@ export default function HomePage() {
           <div className={styles.ctaBannerInner}>
             <div>
               <h2>Ready to Grow Your Business?</h2>
-              <p>Join hundreds of Ontario business owners earning passive income with FuelLocker vending machines.</p>
+              <p>Join hundreds of Ontario business owners earning passive income with Fuel Locker vending machines.</p>
             </div>
             <div className={styles.ctaBannerActions}>
               <Link href="/contact" className="btn btn-primary btn-lg" id="cta-banner-btn">

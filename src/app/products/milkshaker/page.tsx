@@ -2,22 +2,23 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../product.module.css";
+import { GlassWater, Zap, IceCreamCone, Star, CreditCard, FlaskConical, Snowflake, MousePointerClick, Package, Store, CupSoda, Dumbbell, Droplets } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "MilkShaker — Fresh Milkshake Vending Machine",
+  title: "MilkShaker - Fresh Milkshake Vending Machine",
   description: "MilkShaker: 250+ milkshake options including Strawberry Dream, Chocolate Bliss, Mango Burst and more. Premium milkshake vending machine for Ontario businesses.",
 };
 
 const features = [
-  { icon: "🥛", title: "Fresh Milkshakes on Demand", desc: "Countertop vending machine for preparing premium milkshakes and carbonated drinks — fresh every time." },
-  { icon: "⚡", title: "16,000 RPM Mixers", desc: "Four ultra-powerful mixers ensure the perfect creamy, airy milkshake texture every single time." },
-  { icon: "🍦", title: "250+ Drink Options", desc: "Eight large-capacity containers — over 250 milkshake combinations available." },
-  { icon: "🍓", title: "11 Signature Milkshake Flavors", desc: "Strawberry, Chocolate, Banana, Vanilla, Oreo, Mango, Coconut, Cherry, Lemon Lime, Rocky Road, Pistachio." },
-  { icon: "💳", title: "24/7 Payment Processing", desc: "Supports contactless payments, subscriptions, and QR code transactions anytime." },
-  { icon: "🧪", title: "Syrup-Based Options", desc: "Add variety with syrup-based milkshake flavors, powered by three peristaltic pumps." },
-  { icon: "❄️", title: "Cooling to 1°C", desc: "Energy-efficient or compressor-based cooling keeps beverages perfectly chilled." },
-  { icon: "🖱️", title: "Auto Cup Dispenser", desc: "Hands-free, clean serving — the machine handles everything automatically." },
-  { icon: "📦", title: "Compact & Portable", desc: "Weighing just 37 kg — easily relocate to find the best-selling spot for maximum revenue." },
+  { icon: <GlassWater size={32} className="text-yellow" />, title: "Fresh Milkshakes on Demand", desc: "Countertop vending machine for preparing premium milkshakes and carbonated drinks - fresh every time." },
+  { icon: <Zap size={32} className="text-yellow" />, title: "16,000 RPM Mixers", desc: "Four ultra-powerful mixers ensure the perfect creamy, airy milkshake texture every single time." },
+  { icon: <IceCreamCone size={32} className="text-yellow" />, title: "250+ Drink Options", desc: "Eight large-capacity containers - over 250 milkshake combinations available." },
+  { icon: <Star size={32} className="text-yellow" />, title: "11 Signature Milkshake Flavors", desc: "Strawberry, Chocolate, Banana, Vanilla, Oreo, Mango, Coconut, Cherry, Lemon Lime, Rocky Road, Pistachio." },
+  { icon: <CreditCard size={32} className="text-yellow" />, title: "24/7 Payment Processing", desc: "Supports contactless payments, subscriptions, and QR code transactions anytime." },
+  { icon: <FlaskConical size={32} className="text-yellow" />, title: "Syrup-Based Options", desc: "Add variety with syrup-based milkshake flavors, powered by three peristaltic pumps." },
+  { icon: <Snowflake size={32} className="text-yellow" />, title: "Cooling to 1°C", desc: "Energy-efficient or compressor-based cooling keeps beverages perfectly chilled." },
+  { icon: <MousePointerClick size={32} className="text-yellow" />, title: "Auto Cup Dispenser", desc: "Hands-free, clean serving - the machine handles everything automatically." },
+  { icon: <Package size={32} className="text-yellow" />, title: "Compact & Portable", desc: "Weighing just 37 kg - easily relocate to find the best-selling spot for maximum revenue." },
 ];
 
 const specs = [
@@ -36,24 +37,24 @@ const specs = [
 ];
 
 const flavors = [
-  { name: "🍓 Strawberry Dream", desc: "A creamy milkshake with a rich strawberry flavor and refreshing sweetness." },
-  { name: "🍫 Chocolate Bliss", desc: "Smooth and indulgent, with deep cocoa notes and a silky texture." },
-  { name: "🍌 Banana Paradise", desc: "Light and fruity, featuring the natural sweetness of ripe bananas." },
-  { name: "🍦 Vanilla Classic", desc: "A timeless choice with a delicate vanilla aroma and creamy consistency." },
-  { name: "🍪 Oreo Crunch", desc: "Smooth and creamy with real chocolate cookie pieces in every sip." },
-  { name: "🥭 Mango Burst", desc: "A bright and juicy mango flavor that brings tropical vibes." },
-  { name: "🥥 Coconut Chill", desc: "Refreshing coconut taste with a silky, tropical finish." },
-  { name: "🍒 Cherry Pop", desc: "Sweet cherry flavor with a subtle tart kick — bold and fruity." },
-  { name: "🍋 Lemon Lime Zing", desc: "Zesty lemon and lime combo for a crisp, citrusy refreshment." },
-  { name: "🍫 Rocky Road Rush", desc: "Rich chocolate with hints of nut and marshmallow — indulgent and fun." },
-  { name: "🌰 Pistachio Cream", desc: "Delicate pistachio flavor blended into a smooth, creamy base." },
+  { icon: <Star size={24} className="text-yellow" />, name: "Strawberry Dream", desc: "A creamy milkshake with a rich strawberry flavor and refreshing sweetness." },
+  { icon: <Star size={24} className="text-yellow" />, name: "Chocolate Bliss", desc: "Smooth and indulgent, with deep cocoa notes and a silky texture." },
+  { icon: <Star size={24} className="text-yellow" />, name: "Banana Paradise", desc: "Light and fruity, featuring the natural sweetness of ripe bananas." },
+  { icon: <Star size={24} className="text-yellow" />, name: "Vanilla Classic", desc: "A timeless choice with a delicate vanilla aroma and creamy consistency." },
+  { icon: <Star size={24} className="text-yellow" />, name: "Oreo Crunch", desc: "Smooth and creamy with real chocolate cookie pieces in every sip." },
+  { icon: <Star size={24} className="text-yellow" />, name: "Mango Burst", desc: "A bright and juicy mango flavor that brings tropical vibes." },
+  { icon: <Star size={24} className="text-yellow" />, name: "Coconut Chill", desc: "Refreshing coconut taste with a silky, tropical finish." },
+  { icon: <Star size={24} className="text-yellow" />, name: "Cherry Pop", desc: "Sweet cherry flavor with a subtle tart kick - bold and fruity." },
+  { icon: <Star size={24} className="text-yellow" />, name: "Lemon Lime Zing", desc: "Zesty lemon and lime combo for a crisp, citrusy refreshment." },
+  { icon: <Star size={24} className="text-yellow" />, name: "Rocky Road Rush", desc: "Rich chocolate with hints of nut and marshmallow - indulgent and fun." },
+  { icon: <Star size={24} className="text-yellow" />, name: "Pistachio Cream", desc: "Delicate pistachio flavor blended into a smooth, creamy base." },
 ];
 
 const related = [
-  { href: "/products/milkshaker-s", icon: "🍦", name: "MilkShaker S", tagline: "Compact Milkshake" },
-  { href: "/products/shaker-prime", icon: "🏪", name: "Shaker Prime", tagline: "Snacks & Beverages" },
-  { href: "/products/shaker-touch-2", icon: "🥤", name: "Shaker Touch 2", tagline: "Protein Shakes" },
-  { href: "/products/shaker-s", icon: "💪", name: "Shaker S", tagline: "Compact Protein" },
+  { href: "/products/milkshaker-s", icon: <IceCreamCone size={24} className="text-yellow" />, name: "MilkShaker S", tagline: "Compact Milkshake" },
+  { href: "/products/shaker-prime", icon: <Store size={24} className="text-yellow" />, name: "Shaker Prime", tagline: "Snacks & Beverages" },
+  { href: "/products/shaker-touch-2", icon: <CupSoda size={24} className="text-yellow" />, name: "Shaker Touch 2", tagline: "Protein Shakes" },
+  { href: "/products/shaker-s", icon: <Dumbbell size={24} className="text-yellow" />, name: "Shaker S", tagline: "Compact Protein" },
 ];
 
 export default function MilkShakerPage() {
@@ -75,7 +76,7 @@ export default function MilkShakerPage() {
                 <span className="text-yellow">Fresh Milkshakes & Drinks on Demand</span>
               </h1>
               <p className={styles.heroSubtitle}>
-                Boost revenue, delight your clients, and keep them coming back. Premium milkshakes in 11 signature flavors — served fresh, every time, 24/7.
+                Boost revenue, delight your clients, and keep them coming back. Premium milkshakes in 11 signature flavors - served fresh, every time, 24/7.
               </p>
               <div className={styles.heroActions}>
                 <Link href="/contact?machine=MilkShaker" className="btn btn-primary btn-lg" id="milkshaker-cta">
@@ -140,13 +141,13 @@ export default function MilkShakerPage() {
               <span className="section-label">About MilkShaker</span>
               <h2>The Ultimate Milkshake Experience</h2>
               <p style={{ marginTop: "20px" }}>
-                MilkShaker is a countertop vending machine for preparing milkshakes and carbonated drinks. It attracts attention and causes a desire to buy — the simple and clear interface is convenient for everyone.
+                MilkShaker is a countertop vending machine for preparing milkshakes and carbonated drinks. It attracts attention and causes a desire to buy - the simple and clear interface is convenient for everyone.
               </p>
               <p style={{ marginTop: "16px" }}>
                 Branded cups and supplies are available at special rates. Weighing just 37 kg, easily relocate the machine to find the best-selling spot for maximum revenue.
               </p>
               <p style={{ marginTop: "16px" }}>
-                When the machine is powered on, an interactive setup tutorial begins automatically. Full business support included — registration help, contract templates, and location selection.
+                When the machine is powered on, an interactive setup tutorial begins automatically. Full business support included - registration help, contract templates, and location selection.
               </p>
             </div>
             <div className={styles.sectionImage}>
@@ -189,7 +190,10 @@ export default function MilkShakerPage() {
           <div className={styles.flavorsGrid}>
             {flavors.map((f) => (
               <div key={f.name} className={styles.flavorCard}>
-                <div className={styles.flavorName}>{f.name}</div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
+                  {f.icon}
+                  <div className={styles.flavorName} style={{ margin: 0 }}>{f.name}</div>
+                </div>
                 <p className={styles.flavorDesc}>{f.desc}</p>
               </div>
             ))}
@@ -220,9 +224,9 @@ export default function MilkShakerPage() {
               <h3 style={{ marginTop: "8px" }}>Built for Precision</h3>
               <div style={{ marginTop: "24px", display: "flex", flexDirection: "column", gap: "20px" }}>
                 {[
-                  { icon: "🧪", t: "Ingredient Dispensers", d: "Precision valves, modular containers that can be serviced independently. Sealed connections prevent leaks and product loss." },
-                  { icon: "💧", t: "Water & Pump System", d: "Compatible with bottled or direct water connection. Pumps and filters maintain stable pressure and clean liquid flow." },
-                  { icon: "🍦", t: "Auto Cup Dispenser", d: "Hands-free, clean serving every time. The machine automatically dispenses cups and prepares your milkshake." },
+                  { icon: <FlaskConical size={24} className="text-yellow" />, t: "Ingredient Dispensers", d: "Precision valves, modular containers that can be serviced independently. Sealed connections prevent leaks and product loss." },
+                  { icon: <Droplets size={24} className="text-yellow" />, t: "Water & Pump System", d: "Compatible with bottled or direct water connection. Pumps and filters maintain stable pressure and clean liquid flow." },
+                  { icon: <IceCreamCone size={24} className="text-yellow" />, t: "Auto Cup Dispenser", d: "Hands-free, clean serving every time. The machine automatically dispenses cups and prepares your milkshake." },
                 ].map((item) => (
                   <div key={item.t} style={{ display: "flex", gap: "16px", alignItems: "flex-start" }}>
                     <div style={{ fontSize: "1.4rem", flexShrink: 0 }}>{item.icon}</div>

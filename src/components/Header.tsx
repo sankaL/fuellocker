@@ -4,13 +4,14 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./Header.module.css";
+import { Store, CupSoda, Dumbbell, GlassWater, IceCreamCone, Zap } from "lucide-react";
 
 const products = [
-  { href: "/products/shaker-prime", label: "Shaker Prime", icon: "🏪", tagline: "Snacks & Beverages" },
-  { href: "/products/shaker-touch-2", label: "Shaker Touch 2", icon: "🥤", tagline: "Protein Shakes" },
-  { href: "/products/shaker-s", label: "Shaker S", icon: "💪", tagline: "Compact Protein" },
-  { href: "/products/milkshaker", label: "MilkShaker", icon: "🥛", tagline: "Fresh Milkshakes" },
-  { href: "/products/milkshaker-s", label: "MilkShaker S", icon: "🍦", tagline: "Compact Milkshake" },
+  { href: "/products/shaker-prime", label: "Shaker Prime", icon: <Store size={18} />, tagline: "Snacks & Beverages" },
+  { href: "/products/shaker-touch-2", label: "Shaker Touch 2", icon: <CupSoda size={18} />, tagline: "Protein Shakes" },
+  { href: "/products/shaker-s", label: "Shaker S", icon: <Dumbbell size={18} />, tagline: "Compact Protein" },
+  { href: "/products/milkshaker", label: "MilkShaker", icon: <GlassWater size={18} />, tagline: "Fresh Milkshakes" },
+  { href: "/products/milkshaker-s", label: "MilkShaker S", icon: <IceCreamCone size={18} />, tagline: "Compact Milkshake" },
 ];
 
 export default function Header() {
@@ -26,7 +27,9 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMenuOpen(false);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setProductsOpen(false);
   }, [pathname]);
 
@@ -35,9 +38,11 @@ export default function Header() {
       <div className={`container ${styles.inner}`}>
         {/* Logo */}
         <Link href="/" className={styles.logo}>
-          <span className={styles.logoIcon}>⚡</span>
+          <span className={styles.logoIcon}>
+            <Zap size={24} />
+          </span>
           <span className={styles.logoText}>
-            Fuel<span className={styles.logoAccent}>Locker</span>
+            Fuel <span className={styles.logoAccent}>Locker</span>
           </span>
         </Link>
 

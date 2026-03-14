@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import styles from "./page.module.css";
+import { Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with FuelLocker. Request a free quote for vending machines in Ontario, Canada. We'll respond within 1–2 business days.",
+  description: "Get in touch with Fuel Locker. Request a free quote for vending machines in Ontario, Canada. We'll respond within 1-2 business days.",
 };
 
 const infoCards = [
-  { icon: "📧", title: "Email Us", value: "info@fuellocker.ca", link: "mailto:info@fuellocker.ca" },
-  { icon: "📍", title: "Location", value: "Ontario, Canada", link: null },
-  { icon: "⏰", title: "Response Time", value: "Within 1–2 business days", link: null },
+  { icon: <Mail size={32} className="text-yellow" />, title: "Email Us", value: "fuellockervending@gmail.com", link: "mailto:fuellockervending@gmail.com" },
+  { icon: <MapPin size={32} className="text-yellow" />, title: "Location", value: "Ontario, Canada", link: null },
+  { icon: <Clock size={32} className="text-yellow" />, title: "Response Time", value: "Within 1-2 business days", link: null },
 ];
 
 export default function ContactPage() {
@@ -56,7 +57,7 @@ export default function ContactPage() {
               </div>
 
               <div className={`card ${styles.whyCard}`}>
-                <h3 className={styles.whyTitle}>Why FuelLocker?</h3>
+                <h3 className={styles.whyTitle}>Why Fuel Locker?</h3>
                 <ul className={styles.whyList}>
                   {[
                     "Fast delivery & installation",
@@ -76,10 +77,10 @@ export default function ContactPage() {
 
               <div className={styles.locationCard}>
                 <div className={styles.locationCardInner}>
-                  <div className={styles.locationIcon}>📍</div>
+                  <div className={styles.locationIcon}><MapPin size={32} className="text-yellow" /></div>
                   <div>
                     <div className={styles.locationTitle}>Serving All of Ontario</div>
-                    <div className={styles.locationSub}>From Toronto to Ottawa, Hamilton to London — we cover Ontario.</div>
+                    <div className={styles.locationSub}>From Toronto to Ottawa, Hamilton to London - we cover Ontario.</div>
                   </div>
                 </div>
               </div>

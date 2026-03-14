@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./page.module.css";
+import { Store, CupSoda, Dumbbell, GlassWater, IceCreamCone } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Our Vending Machines",
-  description: "Explore FuelLocker's full range of smart vending machines for Ontario businesses — protein shake dispensers, milkshake machines, and snack vending.",
+  description: "Explore Fuel Locker's full range of smart vending machines for Ontario businesses - protein shake dispensers, milkshake machines, and snack vending.",
 };
 
 const products = [
   {
     href: "/products/shaker-prime",
-    icon: "🏪",
+    icon: <Store size={48} className="text-yellow" />,
     name: "Shaker Prime",
     tagline: "Snacks. Sales. Success.",
-    desc: "A floor-standing smart vending machine designed for snacks, beverages, and energy drinks — with 60+ item capacity, age verification, temperature control, and remote management.",
+    desc: "A floor-standing smart vending machine designed for snacks, beverages, and energy drinks - with 60+ item capacity, age verification, temperature control, and remote management.",
     specs: [
       { label: "Type", value: "Floor-standing" },
       { label: "Capacity", value: "60+ items" },
@@ -26,7 +27,7 @@ const products = [
   },
   {
     href: "/products/shaker-touch-2",
-    icon: "🥤",
+    icon: <CupSoda size={48} className="text-yellow" />,
     name: "Shaker Touch 2",
     tagline: "The Next Generation Shake Machine",
     desc: "Vending machine designed for gyms, offices, and vending businesses. Prepares protein, BCAA, and gainer shakes with high-speed 16,000 RPM mixers for perfect texture.",
@@ -42,10 +43,10 @@ const products = [
   },
   {
     href: "/products/shaker-s",
-    icon: "💪",
+    icon: <Dumbbell size={48} className="text-yellow" />,
     name: "Shaker S",
     tagline: "Small Size, Big Performance",
-    desc: "A compact countertop vending machine designed for gyms, offices, and vending businesses. Weighing just 80 lbs — fits anywhere and relocates easily.",
+    desc: "A compact countertop vending machine designed for gyms, offices, and vending businesses. Weighing just 80 lbs - fits anywhere and relocates easily.",
     specs: [
       { label: "Type", value: "Countertop" },
       { label: "Drinks", value: "130+" },
@@ -58,10 +59,10 @@ const products = [
   },
   {
     href: "/products/milkshaker",
-    icon: "🥛",
+    icon: <GlassWater size={48} className="text-yellow" />,
     name: "MilkShaker",
     tagline: "Fresh Milkshakes & Drinks on Demand",
-    desc: "A countertop vending machine for preparing premium milkshakes and carbonated drinks. From Strawberry Dream to Mango Burst — fresh every time.",
+    desc: "A countertop vending machine for preparing premium milkshakes and carbonated drinks. From Strawberry Dream to Mango Burst - fresh every time.",
     specs: [
       { label: "Type", value: "Floor-standing" },
       { label: "Drinks", value: "250+" },
@@ -74,10 +75,10 @@ const products = [
   },
   {
     href: "/products/milkshaker-s",
-    icon: "🍦",
+    icon: <IceCreamCone size={48} className="text-yellow" />,
     name: "MilkShaker S",
     tagline: "Small Size, Big Performance",
-    desc: "The compact milkshake vending machine powered by 16,000 RPM mixers. 130+ drink options in a countertop size — weigh just 80 lbs, relocate anytime.",
+    desc: "The compact milkshake vending machine powered by 16,000 RPM mixers. 130+ drink options in a countertop size - weigh just 80 lbs, relocate anytime.",
     specs: [
       { label: "Type", value: "Countertop" },
       { label: "Drinks", value: "130+" },
@@ -102,7 +103,7 @@ export default function ProductsPage() {
             <span className="text-yellow">Limitless Revenue.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            From high-capacity protein shake dispensers to premium milkshake machines — FuelLocker brings the right vending solution to your Ontario location.
+            From high-capacity protein shake dispensers to premium milkshake machines - Fuel Locker brings the right vending solution to your Ontario location.
           </p>
         </div>
       </section>
@@ -154,7 +155,7 @@ export default function ProductsPage() {
             Our team will assess your location and customer base to recommend the perfect machine for your business.
           </p>
           <Link href="/contact" className="btn btn-primary btn-lg" id="products-cta">
-            Get Expert Advice — Free
+            Get Expert Advice - Free
           </Link>
         </div>
       </section>

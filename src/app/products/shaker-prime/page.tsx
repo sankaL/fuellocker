@@ -2,22 +2,23 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../product.module.css";
+import { Shield, Smartphone, Thermometer, CreditCard, Lock, Activity, Store, Zap, Monitor, Wrench, Globe, CupSoda, Dumbbell, GlassWater, IceCreamCone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Shaker Prime — Smart Snack & Beverage Vending Machine",
+  title: "Shaker Prime - Smart Snack & Beverage Vending Machine",
   description: "Shaker Prime is a floor-standing smart vending machine for snacks, beverages, and energy drinks. 60+ item capacity, age verification, remote management. Ontario, Canada.",
 };
 
 const features = [
-  { icon: "🔞", title: "Smart Age Verification", desc: "Built-in camera ensures safe sales of energy drinks and 18+ products by instantly verifying customer age." },
-  { icon: "📱", title: "Mobile-Ready Loyalty System", desc: "Integrated QR scanner for loyalty cards, promo codes, and client identification." },
-  { icon: "🌡️", title: "Temperature-Controlled Storage", desc: "Refrigeration system keeps products fresh and stable from 4–25°C for maximum quality." },
-  { icon: "💳", title: "24/7 Payment Processing", desc: "Supports contactless payments, subscriptions, and QR code transactions anytime." },
-  { icon: "🔑", title: "Keyless Entry", desc: "Key loss is no longer an issue — keys can be created or removed via your personal account." },
-  { icon: "📊", title: "Remote Monitoring", desc: "Monitor inventory, sales analytics, and machine status from anywhere. Full control remotely." },
-  { icon: "🏪", title: "Marketplace System", desc: "Sell snacks, drinks, or other products with flexible pricing and promotion options." },
-  { icon: "🛡️", title: "Protective Glass", desc: "Durable front design to safeguard products and display from damage." },
-  { icon: "⚡", title: "Power Efficiency", desc: "Built-in UPS for uninterrupted operation — keep selling even during brief power disruptions." },
+  { icon: <Shield size={32} className="text-yellow" />, title: "Smart Age Verification", desc: "Built-in camera ensures safe sales of energy drinks and 18+ products by instantly verifying customer age." },
+  { icon: <Smartphone size={32} className="text-yellow" />, title: "Mobile-Ready Loyalty System", desc: "Integrated QR scanner for loyalty cards, promo codes, and client identification." },
+  { icon: <Thermometer size={32} className="text-yellow" />, title: "Temperature-Controlled Storage", desc: "Refrigeration system keeps products fresh and stable from 4-25°C for maximum quality." },
+  { icon: <CreditCard size={32} className="text-yellow" />, title: "24/7 Payment Processing", desc: "Supports contactless payments, subscriptions, and QR code transactions anytime." },
+  { icon: <Lock size={32} className="text-yellow" />, title: "Keyless Entry", desc: "Key loss is no longer an issue - keys can be created or removed via your personal account." },
+  { icon: <Activity size={32} className="text-yellow" />, title: "Remote Monitoring", desc: "Monitor inventory, sales analytics, and machine status from anywhere. Full control remotely." },
+  { icon: <Store size={32} className="text-yellow" />, title: "Marketplace System", desc: "Sell snacks, drinks, or other products with flexible pricing and promotion options." },
+  { icon: <Shield size={32} className="text-yellow" />, title: "Protective Glass", desc: "Durable front design to safeguard products and display from damage." },
+  { icon: <Zap size={32} className="text-yellow" />, title: "Power Efficiency", desc: "Built-in UPS for uninterrupted operation - keep selling even during brief power disruptions." },
 ];
 
 const specs = [
@@ -36,10 +37,10 @@ const specs = [
 ];
 
 const related = [
-  { href: "/products/shaker-touch-2", icon: "🥤", name: "Shaker Touch 2", tagline: "Protein Shake Machine" },
-  { href: "/products/shaker-s", icon: "💪", name: "Shaker S", tagline: "Compact Protein" },
-  { href: "/products/milkshaker", icon: "🥛", name: "MilkShaker", tagline: "Fresh Milkshakes" },
-  { href: "/products/milkshaker-s", icon: "🍦", name: "MilkShaker S", tagline: "Compact Milkshake" },
+  { href: "/products/shaker-touch-2", icon: <CupSoda size={24} className="text-yellow" />, name: "Shaker Touch 2", tagline: "Protein Shake Machine" },
+  { href: "/products/shaker-s", icon: <Dumbbell size={24} className="text-yellow" />, name: "Shaker S", tagline: "Compact Protein" },
+  { href: "/products/milkshaker", icon: <GlassWater size={24} className="text-yellow" />, name: "MilkShaker", tagline: "Fresh Milkshakes" },
+  { href: "/products/milkshaker-s", icon: <IceCreamCone size={24} className="text-yellow" />, name: "MilkShaker S", tagline: "Compact Milkshake" },
 ];
 
 export default function ShakerPrimePage() {
@@ -66,7 +67,7 @@ export default function ShakerPrimePage() {
                 <span className="text-yellow">Snacks. Sales. Success.</span>
               </h1>
               <p className={styles.heroSubtitle}>
-                Serve more customers, protect your products, and manage your business remotely — all with Shaker Prime. Built for offices, gyms, campuses, and hotels across Ontario.
+                Serve more customers, protect your products, and manage your business remotely - all with Shaker Prime. Built for offices, gyms, campuses, and hotels across Ontario.
               </p>
               <div className={styles.heroActions}>
                 <Link href="/contact?machine=Shaker+Prime" className="btn btn-primary btn-lg" id="shaker-prime-cta">
@@ -116,11 +117,11 @@ export default function ShakerPrimePage() {
               <div className={styles.overviewLabel}>Item Capacity</div>
             </div>
             <div className={styles.overviewItem}>
-              <div className={styles.overviewNum}>15.6"</div>
+              <div className={styles.overviewNum}>15.6&quot;</div>
               <div className={styles.overviewLabel}>HD Display</div>
             </div>
             <div className={styles.overviewItem}>
-              <div className={styles.overviewNum}>4–25°C</div>
+              <div className={styles.overviewNum}>4-25°C</div>
               <div className={styles.overviewLabel}>Temperature Range</div>
             </div>
             <div className={styles.overviewItem}>
@@ -139,15 +140,15 @@ export default function ShakerPrimePage() {
               <span className="section-label">About Shaker Prime</span>
               <h2>More Than Vending — It&apos;s a Complete Marketplace</h2>
               <p style={{ marginTop: "20px" }}>
-                Shaker Prime is a floor-standing smart vending machine designed for snacks, beverages, and energy drinks. From offices and gyms to campuses and hotels — people love convenience. You provide it. You profit.
+                Shaker Prime is a floor-standing smart vending machine designed for snacks, beverages, and energy drinks. From offices and gyms to campuses and hotels - people love convenience. You provide it. You profit.
               </p>
               <p style={{ marginTop: "16px" }}>
-                With a large HD display, built-in age verification camera, and a full remote management suite, Shaker Prime isn&apos;t just a vending machine — it&apos;s a complete business in a box.
+                With a large HD display, built-in age verification camera, and a full remote management suite, Shaker Prime isn&apos;t just a vending machine - it&apos;s a complete business in a box.
               </p>
               <div style={{ display: "flex", gap: "16px", marginTop: "32px", flexWrap: "wrap" }}>
                 <div className="stat-card">
                   <div className="stat-number">661</div>
-                  <div className="stat-label">lbs — Built to last</div>
+                  <div className="stat-label">lbs - Built to last</div>
                 </div>
                 <div className="stat-card">
                   <div className="stat-number">6</div>
@@ -173,7 +174,7 @@ export default function ShakerPrimePage() {
         <div className="container">
           <span className="section-label">Smart Features</span>
           <h2>Advanced Vending Technologies</h2>
-          <p style={{ maxWidth: "560px", marginTop: "12px" }}>Every detail is designed for precision, reliability, and easy service — making Shaker Prime the next-gen vending standard.</p>
+          <p style={{ maxWidth: "560px", marginTop: "12px" }}>Every detail is designed for precision, reliability, and easy service - making Shaker Prime the next-gen vending standard.</p>
           <div className={styles.featuresGrid}>
             {features.map((f) => (
               <div key={f.title} className={styles.featureCard}>
@@ -213,9 +214,9 @@ export default function ShakerPrimePage() {
               <h3 style={{ marginTop: "8px" }}>Engineered for Reliability</h3>
               <div style={{ marginTop: "24px", display: "flex", flexDirection: "column", gap: "20px" }}>
                 {[
-                  { icon: "🖥️", t: "Large HD Display", d: "A 15.6-inch IPS screen for promotions, menus, and advertisements — attracts attention and drives purchases." },
-                  { icon: "🔧", t: "Easy Maintenance", d: "User-friendly automated service system for operators. Smart Control Board manages all processes." },
-                  { icon: "🌐", t: "QR-Code System", d: "Integrated QR code and payment options for instant access — loyalty cards, promo codes, and memberships." },
+                  { icon: <Monitor size={24} className="text-yellow" />, t: "Large HD Display", d: "A 15.6-inch IPS screen for promotions, menus, and advertisements - attracts attention and drives purchases." },
+                  { icon: <Wrench size={24} className="text-yellow" />, t: "Easy Maintenance", d: "User-friendly automated service system for operators. Smart Control Board manages all processes." },
+                  { icon: <Globe size={24} className="text-yellow" />, t: "QR-Code System", d: "Integrated QR code and payment options for instant access - loyalty cards, promo codes, and memberships." },
                 ].map((item) => (
                   <div key={item.t} style={{ display: "flex", gap: "16px", alignItems: "flex-start" }}>
                     <div style={{ fontSize: "1.4rem", flexShrink: 0, paddingTop: "2px" }}>{item.icon}</div>

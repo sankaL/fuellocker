@@ -37,7 +37,7 @@ export function buildContactEmailHtml(data: ContactEmailProps): string {
 <body>
   <div class="card">
     <div class="header">
-      <div class="logo">⚡ Fuel<span class="accent">Locker</span></div>
+      <div class="logo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; stroke: #FFC300; fill: #FFC300;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> Fuel <span class="accent">Locker</span></div>
     </div>
     <div class="body">
       <h2>New Contact Form Submission</h2>
@@ -50,7 +50,7 @@ export function buildContactEmailHtml(data: ContactEmailProps): string {
       <div class="field"><div class="label">Message</div><div class="message-value">${data.message}</div></div>
     </div>
     <div class="footer">
-      <p>This email was sent from the FuelLocker contact form · Ontario, Canada</p>
+      <p>This email was sent from the Fuel Locker contact form · Ontario, Canada</p>
     </div>
   </div>
 </body>
@@ -81,17 +81,17 @@ export function buildAutoReplyHtml(name: string): string {
 <body>
   <div class="card">
     <div class="header">
-      <div class="logo">⚡ Fuel<span class="accent">Locker</span></div>
+      <div class="logo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; stroke: #FFC300; fill: #FFC300;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> Fuel <span class="accent">Locker</span></div>
       <div class="hero-text">Ontario, Canada's Premium Vending Partner</div>
     </div>
     <div class="body">
       <h2>Thanks, ${name}! We've received your message.</h2>
-      <p>Our team at FuelLocker will review your enquiry and get back to you within 1–2 business days. We're excited about the possibility of working with you!</p>
-      <p>While you wait, feel free to explore our full range of vending machines on our website — from protein shake dispensers to premium milkshake machines.</p>
+      <p>Our team at Fuel Locker will review your enquiry and get back to you within 1-2 business days. We're excited about the possibility of working with you!</p>
+      <p>While you wait, feel free to explore our full range of vending machines on our website - from protein shake dispensers to premium milkshake machines.</p>
       <a href="https://fuellocker.ca/products" class="cta">Explore Our Machines →</a>
     </div>
     <div class="footer">
-      <p>© FuelLocker · Ontario, Canada · <a href="mailto:info@fuellocker.ca" style="color:#9ca3af">info@fuellocker.ca</a></p>
+      <p>© Fuel Locker · Ontario, Canada · <a href="mailto:fuellockervending@gmail.com" style="color:#9ca3af">fuellockervending@gmail.com</a></p>
     </div>
   </div>
 </body>

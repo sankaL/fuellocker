@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import { Zap, MapPin, Mail } from "lucide-react";
 
 const products = [
   { href: "/products/shaker-prime", label: "Shaker Prime" },
@@ -17,14 +18,16 @@ export default function Footer() {
           {/* Brand */}
           <div className={styles.brand}>
             <Link href="/" className={styles.logo}>
-              <span className={styles.logoIcon}>⚡</span>
-              <span>Fuel<span className={styles.logoAccent}>Locker</span></span>
+              <span className={styles.logoIcon}>
+                <Zap size={24} />
+              </span>
+              <span>Fuel <span className={styles.logoAccent}>Locker</span></span>
             </Link>
             <p className={styles.tagline}>
-              Ontario&apos;s premier smart vending machine provider. Premium protein shakes, milkshakes, and snacks — available 24/7 for your business.
+              Ontario&apos;s premier smart vending machine provider. Premium protein shakes, milkshakes, and snacks - available 24/7 for your business.
             </p>
             <div className={styles.location}>
-              <span>📍</span>
+              <MapPin size={18} />
               <span>Ontario, Canada</span>
             </div>
           </div>
@@ -57,11 +60,11 @@ export default function Footer() {
             <h4 className={styles.colTitle}>Get in Touch</h4>
             <div className={styles.contactList}>
               <div className={styles.contactItem}>
-                <span>📧</span>
-                <a href="mailto:info@fuellocker.ca" className={styles.footerLink}>info@fuellocker.ca</a>
+                <Mail size={18} />
+                <a href="mailto:fuellockervending@gmail.com" className={styles.footerLink}>fuellockervending@gmail.com</a>
               </div>
               <div className={styles.contactItem}>
-                <span>📍</span>
+                <MapPin size={18} />
                 <span className={styles.contactText}>Ontario, Canada</span>
               </div>
             </div>
@@ -72,7 +75,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <p className={styles.copy}>© {new Date().getFullYear()} FuelLocker. All rights reserved. Serving Ontario, Canada.</p>
+          <p className={styles.copy}>© {new Date().getFullYear()} Fuel Locker. All rights reserved. Serving Ontario, Canada.</p>
           <div className={styles.bottomLinks}>
             <span className={styles.bottomLink}>Privacy Policy</span>
             <span className={styles.bottomLink}>Terms of Service</span>

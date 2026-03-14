@@ -111,6 +111,7 @@
 .heroMachineImg {
   object-fit: contain;
   filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.6));
+  border-radius: var(--radius-lg);
 }
 
 .floatingBadge1, .floatingBadge2 {
@@ -182,11 +183,14 @@
 .productCardFeatured {
   grid-column: span 2;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
 }
 
-.productCardFeatured .productCardDesc {
+.productCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   flex: 1;
 }
 
@@ -206,7 +210,9 @@
 }
 
 .productCardIcon {
-  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
 }
 
@@ -238,11 +244,14 @@
 }
 
 .productCardSpec {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 0.78rem;
   font-weight: 600;
   background: rgba(255,255,255,0.05);
   border-radius: 6px;
-  padding: 4px 10px;
+  padding: 6px 10px;
   color: var(--color-text-muted);
 }
 

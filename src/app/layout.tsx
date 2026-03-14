@@ -5,20 +5,20 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "FuelLocker | Premium Vending Machines in Ontario, Canada",
-    template: "%s | FuelLocker"
+    default: "Fuel Locker | Premium Vending Machines in Ontario, Canada",
+    template: "%s | Fuel Locker"
   },
   description: "Ontario's premier smart vending machine provider. Protein shakes, milkshakes, and snack machines for gyms, offices, and high-traffic locations across Canada.",
-  keywords: ["vending machines Canada", "protein shake vending", "smart vending Ontario", "FuelLocker", "milkshake vending machine"],
+  keywords: ["vending machines Canada", "protein shake vending", "smart vending Ontario", "Fuel Locker", "milkshake vending machine"],
   openGraph: {
-    title: "FuelLocker | Premium Vending Machines in Ontario, Canada",
-    description: "Smart vending machines for gyms, offices, and high-traffic locations. Protein shakes, milkshakes & snacks — 24/7.",
+    title: "Fuel Locker | Premium Vending Machines in Ontario, Canada",
+    description: "Smart vending machines for gyms, offices, and high-traffic locations. Protein shakes, milkshakes & snacks - 24/7.",
     type: "website",
     locale: "en_CA",
   },
   twitter: {
     card: "summary_large_image",
-    title: "FuelLocker | Premium Vending Machines",
+    title: "Fuel Locker | Premium Vending Machines",
     description: "Smart vending machines for Ontario businesses.",
   },
 };
