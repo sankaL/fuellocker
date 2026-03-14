@@ -223,7 +223,7 @@
 
 .productCardTagline {
   font-size: 0.85rem;
-  color: var(--color-yellow);
+  color: var(--color-blue);
   font-weight: 600;
   margin: 0;
 }
@@ -290,7 +290,7 @@
 .stepNum {
   font-size: 3.5rem;
   font-weight: 900;
-  color: rgba(255, 195, 0, 0.15);
+  color: rgba(92, 128, 188, 0.15);
   line-height: 1;
   margin-bottom: 16px;
   letter-spacing: -0.04em;

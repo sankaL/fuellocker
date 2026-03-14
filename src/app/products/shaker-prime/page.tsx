@@ -138,7 +138,7 @@ export default function ShakerPrimePage() {
           <div className={styles.sectionGrid}>
             <div className={styles.sectionText}>
               <span className="section-label">About Shaker Prime</span>
-              <h2>More Than Vending — It&apos;s a Complete Marketplace</h2>
+              <h2>More Than Vending - It&apos;s a Complete Marketplace</h2>
               <p style={{ marginTop: "20px" }}>
                 Shaker Prime is a floor-standing smart vending machine designed for snacks, beverages, and energy drinks. From offices and gyms to campuses and hotels - people love convenience. We provide it. We share the profits.
               </p>

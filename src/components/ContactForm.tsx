@@ -9,7 +9,7 @@ const machines = [
   "Shaker S",
   "MilkShaker",
   "MilkShaker S",
-  "Not sure yet — need advice",
+  "Not sure yet - need advice",
 ];
 
 interface ContactFormProps {
