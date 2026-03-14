@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { resend, buildContactEmailHtml, buildAutoReplyHtml } from '@/lib/resend';
-import { supabase } from '@/lib/supabase';
 
 export async function POST(req: NextRequest) {
   try {
@@ -24,15 +23,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 1. Store in Supabase
-    const { error: dbError } = await supabase
-      .from('contact_submissions')
-      .insert([{ name, email, phone, company, machine, message, created_at: new Date().toISOString() }]);
-
-    if (dbError) {
-      console.error('Supabase error:', dbError);
-      // Don't fail the whole request if DB insert fails - still try to send emails
-    }
+    // 1. Send notification to business
 
     const fromEmail = process.env.CONTACT_EMAIL_FROM || 'Fuel Locker <noreply@fuellocker.ca>';
     const toEmail = process.env.CONTACT_EMAIL_TO || 'fuellockervending@gmail.com';
