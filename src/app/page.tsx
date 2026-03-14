@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
 import {
-  Store, CupSoda, Dumbbell, GlassWater, IceCreamCone, 
-  DollarSign, Smartphone, Lock, CreditCard, Thermometer, Target, 
+  Store, CupSoda, Dumbbell, GlassWater, IceCreamCone,
+  DollarSign, Smartphone, Lock, CreditCard, Thermometer, Target,
   Zap, ArrowRight, Package, Monitor, MapPin
 } from "lucide-react";
 

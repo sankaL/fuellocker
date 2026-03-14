@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { CheckCircle } from "lucide-react";
 import styles from "./ContactForm.module.css";
 
 const machines = [
@@ -56,7 +57,9 @@ export default function ContactForm({ preselectedMachine }: ContactFormProps) {
   if (status === "success") {
     return (
       <div className={styles.successCard} id="contact-form-success">
-        <div className={styles.successIcon}>✅</div>
+        <div className={styles.successIcon}>
+          <CheckCircle size={64} color="#10b981" />
+        </div>
         <h3>Message Sent!</h3>
         <p>Thanks for reaching out. Our team will get back to you within 1–2 business days.</p>
         <button className="btn btn-outline-yellow" onClick={() => setStatus("idle")}>
