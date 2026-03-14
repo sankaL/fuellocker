@@ -69,33 +69,33 @@ const products = [
 const benefits = [
   {
     icon: <DollarSign className="icon-lg text-yellow" />,
-    title: "Passive Revenue Stream",
-    desc: "Earn income 24/7 with minimal time investment. Our machines start generating revenue from day one.",
+    title: "Revenue Share Partnership",
+    desc: "Earn passive income from day one. We share a percentage of the revenue with zero investment from your end.",
   },
   {
     icon: <Smartphone className="icon-lg text-yellow" />,
-    title: "Remote Management",
-    desc: "Monitor sales, inventory, and performance from your phone. Full control, anywhere in Ontario.",
+    title: "Zero-Hassle Operation",
+    desc: "We handle delivery, installation, daily stocking, and maintenance. You just provide the space.",
   },
   {
     icon: <Lock className="icon-lg text-yellow" />,
     title: "Keyless Entry",
-    desc: "Electronic lock - create or remove access via your personal account. No keys to lose.",
+    desc: "Electronic lock - our team manages restocking and servicing seamlessly, without needing your keys.",
   },
   {
     icon: <CreditCard className="icon-lg text-yellow" />,
     title: "Contactless Payments",
-    desc: "Tap-to-pay, subscriptions, QR codes, and loyalty programs supported out of the box.",
+    desc: "Tap-to-pay and mobile payments supported out of the box, ensuring your customers always have a way to pay.",
   },
   {
     icon: <Thermometer className="icon-lg text-yellow" />,
-    title: "Temperature Control",
-    desc: "Keep products fresh and chilled. Smart cooling systems maintain optimal conditions automatically.",
+    title: "Fresh, Healthy Products",
+    desc: "From 16,000 RPM protein shakes to fresh snacks, we provide high-quality items your customers will love.",
   },
   {
     icon: <Target className="icon-lg text-yellow" />,
-    title: "Full Business Support",
-    desc: "Business registration help, contract templates, location selection - we set you up for success.",
+    title: "LCD Screen Marketing",
+    desc: "Help market your own products, services, or gym schedules on our machine's interactive HD displays.",
   },
 ];
 
@@ -119,18 +119,18 @@ export default function HomePage() {
           <div className={styles.heroText}>
             <div className="badge" style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}><MapPin size={14} className="text-yellow" /> Ontario, Canada</div>
             <h1 className={styles.heroHeadline}>
-              Smart Vending Machines<br />
-              <span className="text-yellow">Built for Business</span>
+              Premium vending machines<br />
+              <span className="text-yellow">for your space</span>
             </h1>
             <p className={styles.heroSubtitle}>
-              Premium protein shake, milkshake, and snack vending machines for gyms, offices, and high-traffic locations across Ontario. Start earning on day one.
+              Bring premium protein shakes, milkshakes, and snacks to your Ontario gym, office, or facility. Partner with us, share the revenue, and let us handle all the work.
             </p>
             <div className={styles.heroActions}>
               <Link href="/contact" className="btn btn-primary btn-lg" id="hero-cta-primary">
-                Get a Free Quote
+                Partner With Us
               </Link>
               <Link href="/products" className="btn btn-secondary btn-lg" id="hero-cta-secondary">
-                Explore Machines
+                View Our Machines
               </Link>
             </div>
             <div className={styles.heroStats}>
@@ -176,9 +176,9 @@ export default function HomePage() {
         <div className="container">
           <div className="text-center" style={{ marginBottom: "64px" }}>
             <span className="section-label">Why Fuel Locker</span>
-            <h2>More Than a Vending Machine</h2>
+            <h2>More Than a Machine - A True Partnership</h2>
             <p style={{ maxWidth: "580px", margin: "16px auto 0" }}>
-              We provide the complete package - premium machines, business setup support, remote management tools, and ongoing tech support for Ontario businesses.
+              We provide the complete turnkey solution. A premium machine, zero setup costs, zero maintenance, and a built-in marketing platform for your own services.
             </p>
           </div>
           <div className="grid-3">
@@ -240,10 +240,10 @@ export default function HomePage() {
           </div>
           <div className="grid-4">
             {[
-              { step: "01", title: "Choose Your Machine", desc: "Pick the right vending machine for your location and customer base." },
-              { step: "02", title: "We Handle Setup", desc: "Fast delivery and installation. Business registration help included." },
-              { step: "03", title: "Manage Remotely", desc: "Monitor inventory, sales, and performance from anywhere in Ontario." },
-              { step: "04", title: "Earn 24/7", desc: "Your machine sells while you sleep. Revenue from day one." },
+              { step: "01", title: "Assess Your Space", desc: "We work with you to find the perfect location and machine for your customers." },
+              { step: "02", title: "Zero-Cost Install", desc: "We deliver and install the machine entirely free of charge." },
+              { step: "03", title: "We Handle The Rest", desc: "We restock, maintain, and monitor the machine so you don't have to lift a finger." },
+              { step: "04", title: "Share The Revenue", desc: "You earn a hands-off profit share every single month as your customers enjoy fresh products." },
             ].map((s) => (
               <div key={s.step} className={styles.stepCard}>
                 <div className={styles.stepNum}>{s.step}</div>
@@ -260,12 +260,12 @@ export default function HomePage() {
         <div className="container">
           <div className={styles.ctaBannerInner}>
             <div>
-              <h2>Ready to Grow Your Business?</h2>
-              <p>Join hundreds of Ontario business owners earning passive income with Fuel Locker vending machines.</p>
+              <h2>Ready to Upgrade Your Space?</h2>
+              <p>Partner with us to provide fresh products to your customers and earn passive income with zero hassle.</p>
             </div>
             <div className={styles.ctaBannerActions}>
               <Link href="/contact" className="btn btn-primary btn-lg" id="cta-banner-btn">
-                Get a Free Quote
+                Partner With Us
               </Link>
               <Link href="/products" className="btn btn-secondary btn-lg" id="cta-banner-products">
                 Browse Machines

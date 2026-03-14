@@ -67,11 +67,11 @@ export default function ShakerPrimePage() {
                 <span className="text-yellow">Snacks. Sales. Success.</span>
               </h1>
               <p className={styles.heroSubtitle}>
-                Serve more customers, protect your products, and manage your business remotely - all with Shaker Prime. Built for offices, gyms, campuses, and hotels across Ontario.
+                Serve more customers, protect your products, and partner with us - all with Shaker Prime. Built for offices, gyms, campuses, and hotels across Ontario.
               </p>
               <div className={styles.heroActions}>
                 <Link href="/contact?machine=Shaker+Prime" className="btn btn-primary btn-lg" id="shaker-prime-cta">
-                  Get a Quote
+                  Partner With Us
                 </Link>
                 <Link href="#specs" className="btn btn-secondary btn-lg">
                   View Specs
@@ -140,7 +140,7 @@ export default function ShakerPrimePage() {
               <span className="section-label">About Shaker Prime</span>
               <h2>More Than Vending — It&apos;s a Complete Marketplace</h2>
               <p style={{ marginTop: "20px" }}>
-                Shaker Prime is a floor-standing smart vending machine designed for snacks, beverages, and energy drinks. From offices and gyms to campuses and hotels - people love convenience. You provide it. You profit.
+                Shaker Prime is a floor-standing smart vending machine designed for snacks, beverages, and energy drinks. From offices and gyms to campuses and hotels - people love convenience. We provide it. We share the profits.
               </p>
               <p style={{ marginTop: "16px" }}>
                 With a large HD display, built-in age verification camera, and a full remote management suite, Shaker Prime isn&apos;t just a vending machine - it&apos;s a complete business in a box.
@@ -237,14 +237,14 @@ export default function ShakerPrimePage() {
         <div className="container">
           <div className={styles.ctaStripInner}>
             <div>
-              <h2>Ready to Add Shaker Prime to Your Location?</h2>
+              <h2>Ready for a Shaker Prime Partnership?</h2>
               <p style={{ color: "var(--color-text-muted)", marginTop: "8px" }}>
-                Get a personalized quote and business plan for your Ontario location.
+                Explore a revenue-share partnership for your Ontario location.
               </p>
             </div>
             <div className={styles.ctaStripActions}>
               <Link href="/contact?machine=Shaker+Prime" className="btn btn-primary btn-lg" id="shaker-prime-bottom-cta">
-                Get a Quote
+                Partner With Us
               </Link>
               <Link href="/products" className="btn btn-secondary">
                 All Machines

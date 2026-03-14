@@ -81,7 +81,7 @@ export default function MilkShakerSPage() {
               </p>
               <div className={styles.heroActions}>
                 <Link href="/contact?machine=MilkShaker+S" className="btn btn-primary btn-lg" id="milkshaker-s-cta">
-                  Get a Quote
+                  Partner With Us
                 </Link>
                 <Link href="#flavors" className="btn btn-secondary btn-lg">See Flavors</Link>
               </div>
@@ -226,7 +226,7 @@ export default function MilkShakerSPage() {
                 {[
                   { icon: <Package size={24} className="text-yellow" />, t: "Modular Containers", d: "Four large-capacity containers. Each module serviced independently - minimal downtime, maximum uptime." },
                   { icon: <Droplets size={24} className="text-yellow" />, t: "Flexible Water Supply", d: "Compatible with bottled or direct water connection. Easy service access for quick maintenance." },
-                  { icon: <Briefcase size={24} className="text-yellow" />, t: "Full Business Support", d: "Business registration help, ready-to-use contract templates, and location selection guidance included." },
+                  { icon: <Briefcase size={24} className="text-yellow" />, t: "Turnkey Partnership", d: "Zero setup costs, full maintenance, and a hands-off revenue share from day one." },
                 ].map((item) => (
                   <div key={item.t} style={{ display: "flex", gap: "16px", alignItems: "flex-start" }}>
                     <div style={{ fontSize: "1.4rem", flexShrink: 0 }}>{item.icon}</div>
@@ -246,12 +246,12 @@ export default function MilkShakerSPage() {
         <div className="container">
           <div className={styles.ctaStripInner}>
             <div>
-              <h2>Ready to Add MilkShaker S to Your Location?</h2>
+              <h2>Ready for a MilkShaker S Partnership?</h2>
               <p style={{ color: "var(--color-text-muted)", marginTop: "8px" }}>Compact enough for any space, powerful enough to drive serious revenue.</p>
             </div>
             <div className={styles.ctaStripActions}>
               <Link href="/contact?machine=MilkShaker+S" className="btn btn-primary btn-lg" id="milkshaker-s-bottom-cta">
-                Get a Quote
+                Partner With Us
               </Link>
               <Link href="/products" className="btn btn-secondary">All Machines</Link>
             </div>

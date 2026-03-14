@@ -83,6 +83,7 @@
 .heroImg {
   object-fit: contain;
   filter: drop-shadow(0 20px 80px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 40px rgba(255, 195, 0, 0.1));
+  border-radius: var(--radius-lg);
   max-height: 520px;
   width: auto;
 }
@@ -177,7 +178,6 @@
   direction: ltr;
 }
 
-.sectionText {}
 
 .sectionImage {
   display: flex;

@@ -81,7 +81,7 @@ export default function ShakerSPage() {
               </p>
               <div className={styles.heroActions}>
                 <Link href="/contact?machine=Shaker+S" className="btn btn-primary btn-lg" id="shaker-s-cta">
-                  Get a Quote
+                  Partner With Us
                 </Link>
                 <Link href="#specs" className="btn btn-secondary btn-lg">View Specs</Link>
               </div>
@@ -142,7 +142,7 @@ export default function ShakerSPage() {
               <span className="section-label">About Shaker S</span>
               <h2>Maximum Protein. Minimum Footprint.</h2>
               <p style={{ marginTop: "20px" }}>
-                Shaker S is a countertop vending machine designed for gyms, offices, and vending businesses. It efficiently prepares protein, BCAA, and gainer shakes with high-speed 16,000 RPM mixers for a perfect texture.
+                Partner with us to place the Shaker S in your gym or office. It efficiently prepares protein, BCAA, and gainer shakes with high-speed 16,000 RPM mixers for a perfect texture.
               </p>
               <p style={{ marginTop: "16px" }}>
                 Weighing just 80 lbs, Shaker S fits in gyms, offices, and co-working spaces - offering maximum flexibility and minimal space requirements. Place it on a counter and start earning.
@@ -222,7 +222,7 @@ export default function ShakerSPage() {
                 {[
                   { icon: <Package size={24} className="text-yellow" />, t: "Modular Containers", d: "Four large-capacity containers for protein powder. Each module can be serviced independently - minimal downtime." },
                   { icon: <Droplets size={24} className="text-yellow" />, t: "Flexible Water Supply", d: "Compatible with bottled or direct water connection. Easy service access for quick maintenance of tanks." },
-                  { icon: <CreditCard size={24} className="text-yellow" />, t: "Full Business Support", d: "Assistance with business registration, ready-to-use contract templates, and location selection guidance." },
+                  { icon: <CreditCard size={24} className="text-yellow" />, t: "Turnkey Partnership", d: "Zero setup costs, full maintenance, and a hands-off revenue share from day one." },
                 ].map((item) => (
                   <div key={item.t} style={{ display: "flex", gap: "16px", alignItems: "flex-start" }}>
                     <div style={{ fontSize: "1.4rem", flexShrink: 0 }}>{item.icon}</div>
@@ -242,12 +242,12 @@ export default function ShakerSPage() {
         <div className="container">
           <div className={styles.ctaStripInner}>
             <div>
-              <h2>Ready to Add Shaker S to Your Location?</h2>
+              <h2>Ready for a Shaker S Partnership?</h2>
               <p style={{ color: "var(--color-text-muted)", marginTop: "8px" }}>Perfect for countertops across Ontario - gyms, offices, studios, and more.</p>
             </div>
             <div className={styles.ctaStripActions}>
               <Link href="/contact?machine=Shaker+S" className="btn btn-primary btn-lg" id="shaker-s-bottom-cta">
-                Get a Quote
+                Partner With Us
               </Link>
               <Link href="/products" className="btn btn-secondary">All Machines</Link>
             </div>

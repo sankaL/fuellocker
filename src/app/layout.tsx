@@ -8,18 +8,18 @@ export const metadata: Metadata = {
     default: "Fuel Locker | Premium Vending Machines in Ontario, Canada",
     template: "%s | Fuel Locker"
   },
-  description: "Ontario's premier smart vending machine provider. Protein shakes, milkshakes, and snack machines for gyms, offices, and high-traffic locations across Canada.",
-  keywords: ["vending machines Canada", "protein shake vending", "smart vending Ontario", "Fuel Locker", "milkshake vending machine"],
+  description: "Partner with Ontario's premier smart vending service. We provide the machines, you provide the space. Offer protein shakes, milkshakes, and snacks while sharing revenue.",
+  keywords: ["vending machine partnerships Canada", "revenue share vending", "smart vending Ontario", "Fuel Locker", "turnkey vending solutions"],
   openGraph: {
-    title: "Fuel Locker | Premium Vending Machines in Ontario, Canada",
-    description: "Smart vending machines for gyms, offices, and high-traffic locations. Protein shakes, milkshakes & snacks - 24/7.",
+    title: "Fuel Locker | Premium Vending Partnerships in Ontario",
+    description: "Zero-cost vending machine placement for gyms, offices, and high-traffic locations. Partner with us, offer premium products & share revenue.",
     type: "website",
     locale: "en_CA",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fuel Locker | Premium Vending Machines",
-    description: "Smart vending machines for Ontario businesses.",
+    title: "Fuel Locker | Premium Vending Partnerships",
+    description: "Zero-cost smart vending partnerships for Ontario businesses.",
   },
 };
 

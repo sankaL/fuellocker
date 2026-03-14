@@ -80,7 +80,7 @@ export default function MilkShakerPage() {
               </p>
               <div className={styles.heroActions}>
                 <Link href="/contact?machine=MilkShaker" className="btn btn-primary btn-lg" id="milkshaker-cta">
-                  Get a Quote
+                  Partner With Us
                 </Link>
                 <Link href="#flavors" className="btn btn-secondary btn-lg">See Flavors</Link>
               </div>
@@ -147,7 +147,7 @@ export default function MilkShakerPage() {
                 Branded cups and supplies are available at special rates. Weighing just 37 kg, easily relocate the machine to find the best-selling spot for maximum revenue.
               </p>
               <p style={{ marginTop: "16px" }}>
-                When the machine is powered on, an interactive setup tutorial begins automatically. Full business support included - registration help, contract templates, and location selection.
+                When the machine is powered on, an interactive setup tutorial begins automatically. Turnkey partnership included - zero setup costs, full maintenance, and hands-off revenue share.
               </p>
             </div>
             <div className={styles.sectionImage}>
@@ -246,12 +246,12 @@ export default function MilkShakerPage() {
         <div className="container">
           <div className={styles.ctaStripInner}>
             <div>
-              <h2>Bring Fresh Milkshakes to Your Location</h2>
-              <p style={{ color: "var(--color-text-muted)", marginTop: "8px" }}>Get a personalized quote for your Ontario location.</p>
+              <h2>Partner With Us for Fresh Milkshakes</h2>
+              <p style={{ color: "var(--color-text-muted)", marginTop: "8px" }}>Explore a revenue-share partnership for your Ontario location.</p>
             </div>
             <div className={styles.ctaStripActions}>
               <Link href="/contact?machine=MilkShaker" className="btn btn-primary btn-lg" id="milkshaker-bottom-cta">
-                Get a Quote
+                Partner With Us
               </Link>
               <Link href="/products" className="btn btn-secondary">All Machines</Link>
             </div>

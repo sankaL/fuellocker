@@ -103,7 +103,7 @@ export default function ProductsPage() {
             <span className="text-yellow">Limitless Revenue.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            From high-capacity protein shake dispensers to premium milkshake machines - Fuel Locker brings the right vending solution to your Ontario location.
+            From high-capacity protein shake dispensers to premium milkshake machines - Fuel Locker partners with you to bring the right vending solution to your Ontario location.
           </p>
         </div>
       </section>
@@ -150,12 +150,12 @@ export default function ProductsPage() {
       {/* CTA */}
       <section className="section-sm" style={{ background: "rgba(0,0,0,0.2)", paddingTop: "60px", paddingBottom: "60px" }}>
         <div className="container text-center">
-          <h2>Not Sure Which Machine is Right for You?</h2>
+          <h2>Ready for a Partnership?</h2>
           <p style={{ maxWidth: "500px", margin: "16px auto 32px" }}>
-            Our team will assess your location and customer base to recommend the perfect machine for your business.
+            Let us assess your location and recommend the perfect machine for your business. Zero setup costs, zero hassle.
           </p>
           <Link href="/contact" className="btn btn-primary btn-lg" id="products-cta">
-            Get Expert Advice - Free
+            Partner With Us - Free
           </Link>
         </div>
       </section>

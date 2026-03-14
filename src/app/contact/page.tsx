@@ -5,7 +5,7 @@ import { Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with Fuel Locker. Request a free quote for vending machines in Ontario, Canada. We'll respond within 1-2 business days.",
+  description: "Get in touch with Fuel Locker. Explore a revenue-share partnership for vending machines in Ontario, Canada. We'll respond within 1-2 business days.",
 };
 
 const infoCards = [
@@ -21,9 +21,9 @@ export default function ContactPage() {
       <section className={styles.hero}>
         <div className={`container ${styles.heroInner}`}>
           <span className="section-label">Get in Touch</span>
-          <h1>Let&apos;s Build Your Vending Business</h1>
+          <h1>Partner With Us</h1>
           <p className={styles.heroSubtitle}>
-            Ready to place a premium vending machine at your Ontario location? Fill in the form and our team will craft a custom proposal for your business.
+            Ready to host a premium vending machine at your Ontario location? Fill in the form to explore a zero-cost, revenue-sharing partnership.
           </p>
         </div>
       </section>
@@ -35,8 +35,8 @@ export default function ContactPage() {
             {/* Form */}
             <div className={styles.formSide}>
               <div className={styles.formCard}>
-                <h2 className={styles.formTitle}>Request a Free Quote</h2>
-                <p className={styles.formSubtitle}>Tell us about your location and we&apos;ll find the perfect machine for you.</p>
+                <h2 className={styles.formTitle}>Contact Us to Host a Machine</h2>
+                <p className={styles.formSubtitle}>Tell us about your location, and we&apos;ll handle everything from installation to daily stocking and maintenance.</p>
                 <ContactForm />
               </div>
             </div>
@@ -60,12 +60,12 @@ export default function ContactPage() {
                 <h3 className={styles.whyTitle}>Why Fuel Locker?</h3>
                 <ul className={styles.whyList}>
                   {[
-                    "Fast delivery & installation",
-                    "Business registration support",
-                    "Remote management tools",
+                    "We provide the machine at zero cost",
+                    "We handle all stocking and maintenance",
+                    "LCD marketing for your business",
                     "Full technical support",
-                    "Contract templates included",
-                    "Revenue from day one",
+                    "Business setup and registration help",
+                    "Hands-off revenue share from day one",
                   ].map((item) => (
                     <li key={item} className={styles.whyItem}>
                       <span className={styles.tick}>✓</span>

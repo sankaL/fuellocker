@@ -24,7 +24,7 @@ export default function Footer() {
               <span>Fuel <span className={styles.logoAccent}>Locker</span></span>
             </Link>
             <p className={styles.tagline}>
-              Ontario&apos;s premier smart vending machine provider. Premium protein shakes, milkshakes, and snacks - available 24/7 for your business.
+              Ontario&apos;s premier smart vending host partner. Premium protein shakes, milkshakes, and snacks - available 24/7 for your location.
             </p>
             <div className={styles.location}>
               <MapPin size={18} />
@@ -51,7 +51,7 @@ export default function Footer() {
               <li><Link href="/" className={styles.footerLink}>Home</Link></li>
               <li><Link href="/products" className={styles.footerLink}>Products</Link></li>
               <li><Link href="/contact" className={styles.footerLink}>Contact Us</Link></li>
-              <li><Link href="/contact" className={styles.footerLink}>Get a Quote</Link></li>
+              <li><Link href="/contact" className={styles.footerLink}>Partner With Us</Link></li>
             </ul>
           </div>
 
@@ -69,7 +69,7 @@ export default function Footer() {
               </div>
             </div>
             <Link href="/contact" className={`btn btn-primary ${styles.footerCta}`} id="footer-cta">
-              Get a Free Quote
+              Partner With Us
             </Link>
           </div>
         </div>

@@ -125,7 +125,7 @@ export default function ContactForm({ preselectedMachine }: ContactFormProps) {
       </div>
 
       <div className={styles.field}>
-        <label htmlFor="machine" className={styles.label}>Machine of Interest</label>
+        <label htmlFor="machine" className={styles.label}>Preferred Machine Type (if any)</label>
         <select
           id="machine"
           name="machine"
@@ -148,7 +148,7 @@ export default function ContactForm({ preselectedMachine }: ContactFormProps) {
           required
           value={form.message}
           onChange={handleChange}
-          placeholder="Tell us about your location, how many machines you're interested in, and any questions you have..."
+          placeholder="Tell us about your location, average daily foot traffic, and any questions you have about hosting a machine..."
           rows={5}
           className={styles.textarea}
         />

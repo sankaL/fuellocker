@@ -80,7 +80,7 @@ export default function ShakerTouch2Page() {
               </p>
               <div className={styles.heroActions}>
                 <Link href="/contact?machine=Shaker+Touch+2" className="btn btn-primary btn-lg" id="shaker-touch-2-cta">
-                  Get a Quote
+                  Partner With Us
                 </Link>
                 <Link href="#specs" className="btn btn-secondary btn-lg">View Specs</Link>
               </div>
@@ -141,7 +141,7 @@ export default function ShakerTouch2Page() {
               <span className="section-label">About Shaker Touch 2</span>
               <h2>The Professional Protein Vending Solution</h2>
               <p style={{ marginTop: "20px" }}>
-                Vending machine designed for gyms, offices, and vending businesses. It efficiently prepares protein, BCAA, and gainer shakes, ensuring the perfect texture with high-speed 16,000 RPM mixers.
+                Partner with us to bring this vending machine to your gym or office. It efficiently prepares protein, BCAA, and gainer shakes, ensuring the perfect texture with high-speed 16,000 RPM mixers.
               </p>
               <p style={{ marginTop: "16px" }}>
                 The large 32&quot; touchscreen attracts attention and encourages purchases. Advanced design, flexible setup, and high product quality - everything to boost engagement and increase daily usage.
@@ -243,12 +243,12 @@ export default function ShakerTouch2Page() {
         <div className="container">
           <div className={styles.ctaStripInner}>
             <div>
-              <h2>Bring Shaker Touch 2 to Your Location</h2>
-              <p style={{ color: "var(--color-text-muted)", marginTop: "8px" }}>Get a personalized quote and business plan for your Ontario location.</p>
+              <h2>Partner With Us for Shaker Touch 2</h2>
+              <p style={{ color: "var(--color-text-muted)", marginTop: "8px" }}>Explore a revenue-share partnership for your Ontario location.</p>
             </div>
             <div className={styles.ctaStripActions}>
               <Link href="/contact?machine=Shaker+Touch+2" className="btn btn-primary btn-lg" id="shaker-touch-2-bottom-cta">
-                Get a Quote
+                Partner With Us
               </Link>
               <Link href="/products" className="btn btn-secondary">All Machines</Link>
             </div>
