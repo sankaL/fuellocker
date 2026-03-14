@@ -336,7 +336,7 @@
   .heroSubtitle { margin: 0 auto; }
   .heroActions { justify-content: center; }
   .heroStats { justify-content: center; }
-  .heroImage { display: none; }
+  .heroImage { margin-top: 32px; }
   .productGrid { grid-template-columns: 1fr; }
   .productCardFeatured { grid-column: span 1; flex-direction: column; }
   .ctaBannerInner { flex-direction: column; text-align: center; }

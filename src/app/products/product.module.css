@@ -350,7 +350,7 @@
 /* Responsive */
 @media (max-width: 1024px) {
   .heroGrid { grid-template-columns: 1fr; gap: 48px; }
-  .heroImageArea { display: none; }
+  /* .heroImageArea { display: none; } */
   .overviewGrid { grid-template-columns: repeat(2, 1fr); }
   .featuresGrid { grid-template-columns: 1fr 1fr; }
   .sectionGrid { grid-template-columns: 1fr; gap: 40px; }
