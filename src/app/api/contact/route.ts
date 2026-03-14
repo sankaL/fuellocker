@@ -30,19 +30,43 @@ export async function POST(req: NextRequest) {
     const toEmail = process.env.CONTACT_EMAIL_TO || 'fuellockervending@gmail.com';
 
     // 2. Send notification to business
-    await resend.emails.send({
+    const businessEmailResult = await resend.emails.send({
       from: fromEmail,
       to: [toEmail],
       subject: `New Enquiry from ${name}${machine ? ` - ${machine}` : ''} | Fuel Locker`,
       html: buildContactEmailHtml({ name, email, phone, company, machine, message }),
     });
 
+    if (businessEmailResult.error) {
+      console.error('Contact API error: failed to send business notification', businessEmailResult.error);
+      return NextResponse.json(
+        { error: 'Unable to send your message right now. Please try again or email us directly.' },
+        { status: 502 }
+      );
+    }
+
     // 3. Send auto-reply to customer
-    await resend.emails.send({
+    const customerEmailResult = await resend.emails.send({
       from: fromEmail,
       to: [email],
       subject: "We've received your message - Fuel Locker",
       html: buildAutoReplyHtml(name),
+    });
+
+    if (customerEmailResult.error) {
+      console.error('Contact API error: failed to send customer auto-reply', customerEmailResult.error);
+      return NextResponse.json(
+        { error: 'Your message was received, but we could not send the confirmation email.' },
+        { status: 502 }
+      );
+    }
+
+    console.info('Contact API success', {
+      name,
+      email,
+      machine: machine || null,
+      businessEmailId: businessEmailResult.data?.id ?? null,
+      customerEmailId: customerEmailResult.data?.id ?? null,
     });
 
     return NextResponse.json({ success: true });
